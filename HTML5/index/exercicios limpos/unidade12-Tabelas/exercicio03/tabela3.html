@@ -55,15 +55,19 @@
 			font-size:.9em;
 			color:#666;
 		}
-        
-        tbody tr:nth-child(odd) {
-            background-color: beige   
+
+        		/*odd é linha impar e even é linha direita*/
+		tbody tr:nth-child(odd){
+			background-color: #ddd;
+		}
+
+     
+
+        .coluna_cinza{
+            background-color: #f0f0f0;
         }
-        
-        tbody tr:nth-child(even) {
-            background-color:antiquewhite  
-        }        
-	
+
+      	
 	
 	</style>
 
@@ -72,6 +76,17 @@
         <table>
         
             <caption>Olimpiadas do Rio de Janeiro 2016</caption>
+
+            <!--Vou usar colgroup para determinar uma cor especifica para uma determinada coluna-->
+            <colgroup>
+                <col class="coluna_cinza"> <!--coluna 1-->
+                <col>                      <!--coluna 2-->
+                <col class="coluna_cinza"> <!--coluna 3-->
+                <col>                      <!--coluna 4-->
+                <col class="coluna_cinza"> <!--coluna 5-->
+
+            </colgroup>
+
             <thead>
                 <tr>
                     <td></td>
