@@ -14,11 +14,15 @@
             <label for="nome">Nome completo</label>
             <input type="text" name="nome" id="nome" size="30" maxlength="100">
             
+            <!--no type tel, email e url vale para smartfone na parte de máscara e não computador, entretanto a parte de checar formato vale para os dois-->
             <label for="telefone">Telefone</label>
-            <input type="text" name="telefone" id="telefone" size="30" maxlength="30"> 
+            <input type="tel" name="telefone" id="telefone" size="30" maxlength="30"> 
             
             <label for="email">Email</label>
-            <input type="text" name="email" id="email" size="30" maxlength="60">             
+            <input type="email" name="email" id="email" size="30" maxlength="60">      
+            
+            <label for="website">Website</label>
+            <input type="url" name="website" id="website" size="30" maxlength="60">  
             
             <input type="submit" value="Enviar" id="enviar" name="enviar">
         </form>
